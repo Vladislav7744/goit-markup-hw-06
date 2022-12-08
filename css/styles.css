@@ -673,6 +673,7 @@ body {
 /* logo footer */
 
 
+
 .logo-footer {
     display: inline-block;
     font-family: Raleway,sans-serif;
@@ -721,6 +722,9 @@ body {
     color: var(--primary-white-color);
 
 
+    min-width: 231px;
+
+
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -739,6 +743,8 @@ body {
     line-height: 1.71;
     color: var(--footer-contact-color);
 
+    min-width: 231px;
+
 
     transition-property: color;
     transition-duration: 250ms;
@@ -751,11 +757,14 @@ body {
     color: var(--accent-color);
 }
 
-
-.footer div:not(:last-child) {
+.footer-info {
     margin-right: 70px;
 }
 
+
+.footer-social {
+    margin-right: 93px;
+}
 
 .foot-soc-title {
     font-weight: 700;
@@ -805,6 +814,93 @@ body {
 }
 
 
+.footer-mail-form {
+    display: flex;
+    align-items: flex-end;
+}
+
+
+
+.footer-form-list li:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+
+
+.footer-mail-title {
+    font-weight: 700;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+
+.footer-mail-form input {
+
+    width: 358px;
+    height: 50px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: rgba(47, 48, 58, 1);
+    
+
+    font-size: 16px;
+    line-height: 1.25;
+    padding: 16px 15px;
+    
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+    
+}
+
+
+.footer-form-button {
+    
+    width: 200px;
+    height: 50px;
+
+    border: none;
+    background: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    padding: 10px 28px;
+    margin-left: 12px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+
+    color: #FFFFFF;
+
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.footer-form-button:hover,
+.footer-form-button:focus {
+    cursor: pointer;
+    background-color:#188CE8;
+}
+
+
+.icon-fly {
+    margin-left: 10px;
+}
+
 /* portfollio */
 
 
@@ -837,7 +933,7 @@ body {
     color:var(--title-text-color);
 
 
-    transition-property: background-color, box-shadow;
+    transition-property: background-color, box-shadow, color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
