@@ -380,9 +380,6 @@ body {
 }
 
 
-.form {
-
-}
 
 .form-title {
 
@@ -413,26 +410,35 @@ body {
     width: 448px;
     height: 40px;
 
+    margin-top: 4px;
     padding-left: 42px;
     
 
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+
+
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
+.form-input:focus {
+    outline: none;
+    border-color:  #2196F3;
+}
+
+
+.form-input:focus ~ .form-icons {
+    color: #188CE8;
+}
+
 
 .form-icons {
     position: absolute;
     top: 50%;
     left: 12px;
-}
-
-
-label input {
-    margin-top: 4px;
-}
-
-textarea {
-    margin-top: 4px;
 }
 
 
@@ -450,6 +456,19 @@ textarea {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     color: rgba(117, 117, 117, 0.5);
+
+    margin-top: 4px;
+
+
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.form-list textarea:focus {
+    outline: none;
+    border-color:  #2196F3;
 }
 
 
@@ -493,6 +512,7 @@ textarea {
 }
 
 
+
 .form-check:checked + .checkbox-icon {
     background: #2196F3;
     border-color: #2196F3;
@@ -502,6 +522,8 @@ textarea {
 
 
 .form-link {
+    margin-left: 7px;
+    text-decoration: underline;
     color: rgba(33, 150, 243, 1);
 }
 
