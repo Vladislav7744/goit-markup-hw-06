@@ -372,13 +372,22 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: rgba(255, 255, 255, 1);
     color: #000000;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.modal-close:hover,
+.modal-close:focus {
+    color: #188CE8;
 }
 
 
 .modal-svg {
     fill: currentColor;
 }
-
 
 
 .form-title {
@@ -391,6 +400,7 @@ body {
 
     color: #212121;
 }
+
 
 .form-label {
     position: relative;
@@ -426,7 +436,7 @@ body {
 
 .form-input:focus {
     outline: none;
-    border-color:  #2196F3;
+    border-color:  var(--accent-color);
 }
 
 
@@ -455,7 +465,6 @@ body {
 
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    color: rgba(117, 117, 117, 0.5);
 
     margin-top: 4px;
 
@@ -466,9 +475,14 @@ body {
 }
 
 
+.form-list textarea :placeholder-shown {
+    color: rgba(117, 117, 117, 0.5);
+}
+
+
 .form-list textarea:focus {
     outline: none;
-    border-color:  #2196F3;
+    border-color:  var(--accent-color);
 }
 
 
@@ -478,12 +492,21 @@ body {
 
 
 .form-list li:nth-child(4) {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .label {
     display: inline-block;
 }
+
+
+.form-chec-element {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 
 .form-check {
     position: absolute;
@@ -514,14 +537,15 @@ body {
 
 
 .form-check:checked + .checkbox-icon {
-    background: #2196F3;
-    border-color: #2196F3;
+    border-color: var(--accent-color);
     background-image: url('../images/icon-check.svg');
     background-origin: border-box;
 }
 
 
 .form-link {
+    line-height: 24px;
+
     margin-left: 7px;
     text-decoration: underline;
     color: rgba(33, 150, 243, 1);
@@ -536,7 +560,7 @@ body {
     padding: 10px 52px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
+    margin-top: 20px;
 
     cursor: pointer;
 
@@ -550,7 +574,7 @@ body {
 
     color: #FFFFFF;
 
-    background: #2196F3;
+    background: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 
@@ -1052,7 +1076,17 @@ body {
     letter-spacing: 0.03em;
 
     color: rgba(255, 255, 255, 0.6);
+
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
+}
+
+
+.footer-mail-form input:focus {
+    outline: none;
+    border-color: var(--accent-color);
 }
 
 
