@@ -441,7 +441,7 @@ body {
 
 
 .form-input:focus ~ .form-icons {
-    color: #188CE8;
+    fill: #188CE8;
 }
 
 
