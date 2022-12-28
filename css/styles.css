@@ -396,7 +396,7 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
 
-    margin-bottom: 30px;
+    margin-bottom: 12px;
 
     color: #212121;
 }
@@ -412,6 +412,7 @@ body {
     letter-spacing: 0.01em;
 
     color: #757575;
+
 }
 
 
@@ -421,6 +422,7 @@ body {
     height: 40px;
 
     margin-top: 4px;
+    margin-bottom: 10px;
     padding-left: 42px;
     
 
@@ -447,12 +449,12 @@ body {
 
 .form-icons {
     position: absolute;
-    top: 50%;
+    top: 38%;
     left: 12px;
 }
 
 
-.form-list textarea {
+.form-label textarea {
     resize: none;
 
     width: 448px;
@@ -467,6 +469,7 @@ body {
     border-radius: 4px;
 
     margin-top: 4px;
+    margin-bottom: 20px;
 
 
     transition-property: border-color;
@@ -475,12 +478,12 @@ body {
 }
 
 
-.form-list textarea :placeholder-shown {
+.form-label textarea :placeholder-shown {
     color: rgba(117, 117, 117, 0.5);
 }
 
 
-.form-list textarea:focus {
+.form-label textarea:focus {
     outline: none;
     border-color:  var(--accent-color);
 }
@@ -500,11 +503,11 @@ body {
 }
 
 
-.form-chec-element {
+/* .form-chec-element {
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} было последним в списке в форе был такой класс */
 
 
 
