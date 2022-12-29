@@ -442,15 +442,19 @@ body {
 }
 
 
-.form-input:focus ~ .form-icons {
-    fill: #188CE8;
-}
-
-
 .form-icons {
     position: absolute;
     top: 38%;
     left: 12px;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.form-input:focus ~ .form-icons {
+    fill: #188CE8;
 }
 
 
@@ -489,26 +493,14 @@ body {
 }
 
 
-.form-list li {
-    margin-bottom: 10px;
-}
-
-
-.form-list li:nth-child(4) {
-    margin-bottom: 20px;
-}
-
 .label {
     display: inline-block;
 }
 
 
-/* .form-chec-element {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} было последним в списке в форе был такой класс */
-
+.form-check-label {
+    margin-left: 14px;
+}
 
 
 .form-check {
@@ -538,7 +530,6 @@ body {
 }
 
 
-
 .form-check:checked + .checkbox-icon {
     border-color: var(--accent-color);
     background-image: url('../images/icon-check.svg');
@@ -547,8 +538,7 @@ body {
 
 
 .form-link {
-    line-height: 24px;
-
+    letter-spacing: 0.03em;
     margin-left: 7px;
     text-decoration: underline;
     color: rgba(33, 150, 243, 1);
