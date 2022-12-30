@@ -391,7 +391,6 @@ body {
 
 
 .form-title {
-
     font-size: 20px;
     text-align: center;
     letter-spacing: 0.03em;
@@ -530,7 +529,7 @@ body {
 }
 
 
-.form-check:checked + .checkbox-icon {
+.form-check:focus + .checkbox-icon {
     border-color: var(--accent-color);
     background-image: url('../images/icon-check.svg');
     background-origin: border-box;
@@ -1033,23 +1032,18 @@ body {
 }
 
 
-
-.footer-form-list li:not(:last-child) {
-    margin-bottom: 20px;
-}
-
-
+/* футер форм лист это был класс списка */
 
 .footer-mail-title {
     font-weight: 700;
     text-transform: uppercase;
+
 
     color: #FFFFFF;
 }
 
 
 .footer-mail-form input {
-
     width: 358px;
     height: 50px;
 
@@ -1062,6 +1056,8 @@ body {
     font-size: 16px;
     line-height: 1.25;
     padding: 16px 15px;
+
+    margin-top: 20px;
     
 
     display: flex;
@@ -1073,7 +1069,6 @@ body {
     transition-property: border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    
 }
 
 
@@ -1084,7 +1079,6 @@ body {
 
 
 .footer-form-button {
-    
     width: 200px;
     height: 50px;
 
